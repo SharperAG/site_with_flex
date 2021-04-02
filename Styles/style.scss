@@ -1,0 +1,254 @@
+@import "variables.scss";
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.header {
+  min-height: 100px;
+  height: 10%;
+  background: $gray;
+}
+
+.btn {
+  @include btn-style;
+}
+
+.header__content {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .header__desctription {
+    font-size: 0.8rem;
+  }
+
+  .header__city {
+    font-size: 0.6rem;
+
+    p:nth-child(1) {
+      color: gray;
+    }
+    p:nth-child(2) {
+      display: inline-block;
+      border-bottom: 1px dashed $blue;
+      color: $blue;
+    }
+  }
+  .header__phones {
+    p {
+      margin-bottom: 0.3rem;
+      font-size: 0.8rem;
+    }
+  }
+  .header__social > img {
+    margin-right: 0.5rem;
+  }
+}
+
+.nav-menu {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .nav-item {
+    color: $blue;
+    font-size: 0.8rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $blue;
+    }
+  }
+}
+
+.button-toggle {
+  border: 1px solid black;
+  padding: 1rem;
+  position: relative;
+  color: #fff;
+
+  > span:nth-child(1) {
+    border-bottom: 2px solid #000;
+  }
+  /* > span:nth-child(2) {
+    border-top: 5px solid #000;
+
+    margin-bottom: 2px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+  > span:nth-child(3) {
+    border-top: 5px solid #000;
+
+    margin-bottom: 2px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  } */
+}
+
+.brand {
+  min-height: 600px;
+  height: 50%;
+  background-image: url("../Img/brand.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .brand__text {
+    text-align: center;
+    color: #fff;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .brand__title {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    .brand__title--small {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+.section-first {
+  background-color: $blue;
+  .section-items {
+    display: flex;
+    justify-content: space-around;
+
+    .section-item {
+      position: relative;
+      color: #fff;
+      padding: 1rem;
+
+      text-align: center;
+      > img {
+        width: 40px;
+      }
+      p:nth-child(2) {
+        margin: 0.5rem;
+        font: 600 1.2rem Helvetica;
+      }
+      p:nth-child(3) {
+        margin: 0.5rem;
+        font: 400 0.8rem Helvetica;
+      }
+
+      i {
+        position: absolute;
+        width: 2px;
+        background-color: #fff;
+        top: 35px;
+        right: -30px;
+        height: 60px;
+      }
+    }
+
+    .lasti {
+      border-right: none;
+    }
+  }
+}
+
+.section-second {
+  background-color: $gray;
+  padding: 1rem;
+
+  fieldset {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.7rem 0;
+    border: 2px dashed $blue;
+
+    legend {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: $blue;
+      padding: 1rem;
+    }
+
+    .section-consult {
+      margin: 0.5rem;
+      display: flex;
+      justify-content: center;
+
+      .section-inputs {
+        display: flex;
+        justify-content: space-between;
+      }
+      input {
+        margin-right: 10px;
+      }
+
+      input:not([type="button"]) {
+        padding: 0.2rem;
+      }
+    }
+  }
+}
+
+.section-third {
+  margin: 1rem;
+  .section-houses {
+    display: flex;
+    justify-content: center;
+
+    figure {
+      margin-right: 10px;
+
+      figcaption {
+        background-color: $blue;
+        color: #fff;
+        text-align: center;
+        margin-top: -2px;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $blue;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  p {
+    color: $gray;
+    font-size: 2rem;
+  }
+}
+
+.yellow {
+  background-color: #fcc211;
+  color: #000;
+}
+@import "_keyframes.scss";

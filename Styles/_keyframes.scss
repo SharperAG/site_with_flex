@@ -1,0 +1,69 @@
+@media (max-width: 950px) {
+  i {
+    display: none;
+  }
+  .section-items {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .section-consult {
+      flex-direction: column;
+
+      margin: 0 auto;
+
+      position: relative;
+
+      > * {
+        margin-bottom: 15px;
+      }
+
+      > * {
+        margin-bottom: 15px;
+        max-width: 500px;
+      }
+
+      input {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .header__content {
+    justify-content: space-around;
+  }
+
+  .header__desctription {
+    display: none;
+  }
+  i {
+    display: none;
+  }
+
+  .section-houses {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .header__content {
+    justify-content: space-around;
+  }
+
+  .header__social,
+  .header__city,
+  .header__desctription {
+    display: none;
+  }
+  .section-item {
+    width: 100%;
+  }
+}
