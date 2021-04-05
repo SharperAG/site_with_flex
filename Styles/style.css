@@ -98,6 +98,19 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #007cbb;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin: 1rem;
+}
+
+.nav-menu .nav-item a:hover {
+  text-shadow: 0 -1px 1px #007cbb;
+  border: 1px solid gray;
+  color: #ebeced;
+  padding: 0.4rem;
+  border-radius: 10px;
+  background-color: #007cbb;
 }
 
 .button-toggle {

@@ -76,6 +76,17 @@ body {
       text-decoration: none;
       text-transform: uppercase;
       color: $blue;
+      transition: 0.5s;
+
+      margin: 1rem;
+      &:hover {
+        text-shadow: 0 -1px 1px $blue;
+        border: 1px solid gray;
+        color: $gray;
+        padding: 0.4rem;
+        border-radius: 10px;
+        background-color: $blue;
+      }
     }
   }
 }
